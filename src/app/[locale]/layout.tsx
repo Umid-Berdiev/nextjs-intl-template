@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html
       lang={locale}
-      dir={locale === 'ar' || locale == 'fa' ? 'rtl' : 'ltr'}
+      dir={'ltr'}
       className={`${space_grotesk.variable} ${rubik.variable} scroll-smooth`}
       suppressHydrationWarning
     >
@@ -49,13 +49,13 @@ export default function RootLayout({
           defaultTheme='light'
           themes={[
             'light',
-            'dark',
-            'instagram',
-            'facebook',
-            'discord',
-            'netflix',
-            'twilight',
-            'reddit'
+            'dark'
+            // 'instagram',
+            // 'facebook',
+            // 'discord',
+            // 'netflix',
+            // 'twilight',
+            // 'reddit'
           ]}
         >
           <NextIntlClientProvider
